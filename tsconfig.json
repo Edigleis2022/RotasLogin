@@ -2,6 +2,17 @@
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
     "strict": true,
+
+    // 🔥 ESSENCIAL 
+    "jsx": "react-jsx",
+
+    // Permite importar JSON
+    "resolveJsonModule": true,
+
+    // Evita erros chatos de lib
+    "skipLibCheck": true,
+
+    // Seu alias 
     "paths": {
       "@/*": [
         "./*"

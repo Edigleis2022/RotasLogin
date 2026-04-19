@@ -5,7 +5,7 @@ export default function Login() {
   const router = useRouter();
 
   return (
-    <View>
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
 
       <Text>Login</Text>
 
