@@ -23,7 +23,7 @@ export default function Login() {
         onPress={() => {
 
           // Vai para lista de cursos
-          router.push('/lista' as any);
+          router.push('/lista');
 
         }}
       />

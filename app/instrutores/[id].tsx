@@ -9,14 +9,15 @@ export default function Instrutor() {
   // Garante string
   const idString = Array.isArray(id) ? id[0] : id;
 
-  console.log("ID instrutor:", idString);
+  //DEBUG
+  //console.log("ID instrutor:", idString);
 
   // Busca instrutor
   const instrutor = dados.instrutores.find(
     i => i.id === idString
   );
 
-  console.log("Instrutor encontrado:", instrutor);
+  //console.log("Instrutor encontrado:", instrutor);
 
   // Busca cursos do instrutor
   const cursos = dados.cursos.filter(

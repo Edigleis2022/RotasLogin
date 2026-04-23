@@ -11,12 +11,12 @@ export default function Curso() {
   const idString = Array.isArray(id) ? id[0] : id;
 
   // DEBUG
-  console.log("ID tratado:", idString);
+  //console.log("ID tratado:", idString);
 
   // Busca curso
   const curso = dados.cursos.find(c => c.id === idString);
 
-  console.log("Curso encontrado:", curso);
+  //console.log("Curso encontrado:", curso);
 
   // Busca instrutor
   const instrutor = dados.instrutores.find(
@@ -38,7 +38,7 @@ export default function Curso() {
           if (instrutor) {
 
             // Vai para tela do instrutor
-            router.push(`/instrutores/${instrutor.id}` as any);
+            router.push(`/instrutores/${instrutor.id}`);
 
           }
 

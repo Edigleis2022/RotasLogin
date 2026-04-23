@@ -28,7 +28,7 @@ export default function Lista() {
           onPress={() => {
 
             // Vai para tela do curso
-            router.push(`/cursos/${curso.id}` as any);
+            router.push(`/cursos/${curso.id}`);
 
           }}
         />
