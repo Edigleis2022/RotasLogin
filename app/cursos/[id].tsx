@@ -4,6 +4,7 @@ import dados from "../../data/dados.json";
 
 export default function Curso() {
 
+  //Pega o ID da URL
   const { id } = useLocalSearchParams();
   const router = useRouter();
 
