@@ -4,20 +4,23 @@ import dados from "../../data/dados.json";
 
 export default function Curso() {
 
-  // Pega o ID da rota
   const { id } = useLocalSearchParams();
-
   const router = useRouter();
 
-  // Garante que o ID é string
+  // Garante que é string
   const idString = Array.isArray(id) ? id[0] : id;
 
-  // Busca o curso pelo ID
-  const curso = dados.cursos.find((c) => c.id === idString);
+  // DEBUG
+  console.log("ID tratado:", idString);
 
-  // Busca o instrutor relacionado
+  // Busca curso
+  const curso = dados.cursos.find(c => c.id === idString);
+
+  console.log("Curso encontrado:", curso);
+
+  // Busca instrutor
   const instrutor = dados.instrutores.find(
-    (i) => i.id === curso?.idInstrutor
+    i => i.id === curso?.idInstrutor
   );
 
   return (

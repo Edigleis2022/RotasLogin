@@ -4,14 +4,24 @@ import dados from "../../data/dados.json";
 
 export default function Instrutor() {
 
-  // Pega ID da URL
   const { id } = useLocalSearchParams();
 
-  // Busca instrutor
-  const instrutor = dados.instrutores.find(i => i.id === id);
+  // Garante string
+  const idString = Array.isArray(id) ? id[0] : id;
 
-  // Busca cursos dele
-  const cursos = dados.cursos.filter(c => c.idInstrutor === id);
+  console.log("ID instrutor:", idString);
+
+  // Busca instrutor
+  const instrutor = dados.instrutores.find(
+    i => i.id === idString
+  );
+
+  console.log("Instrutor encontrado:", instrutor);
+
+  // Busca cursos do instrutor
+  const cursos = dados.cursos.filter(
+    c => c.idInstrutor === idString
+  );
 
   return (
     <View>
@@ -20,7 +30,7 @@ export default function Instrutor() {
 
       <Text>Cursos:</Text>
 
-      {/* Lista cursos do instrutor */}
+      {/* Lista cursos */}
       {cursos.map(curso => (
         <Text key={curso.id}>{curso.nome}</Text>
       ))}

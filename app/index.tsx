@@ -2,6 +2,8 @@ import { View, Text, TextInput, Button } from 'react-native';
 import { useRouter } from 'expo-router';
 
 export default function Login() {
+
+  // Hook de navegação
   const router = useRouter();
 
   return (
@@ -9,19 +11,18 @@ export default function Login() {
 
       <Text>Login</Text>
 
-      {/* Campo de usuário */}
+      {/* Campo usuário */}
       <TextInput placeholder="Usuário" />
 
-      {/* Campo de senha */}
+      {/* Campo senha */}
       <TextInput placeholder="Senha" secureTextEntry />
 
-      {/* Botão de entrar */}
+      {/* Botão entrar */}
       <Button
         title="Entrar"
         onPress={() => {
 
-          // Navega para a tela de lista
-          // "as any" evita erro de tipagem do Expo Router
+          // Vai para lista de cursos
           router.push('/lista' as any);
 
         }}

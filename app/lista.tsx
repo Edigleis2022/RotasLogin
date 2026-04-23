@@ -2,7 +2,7 @@ import { useRouter } from "expo-router";
 import { Button, Text, View } from "react-native";
 import dados from "../data/dados.json";
 
-// Tipo do curso (evita erro de 'any')
+// Tipo do curso
 type Curso = {
   id: string;
   nome: string;
@@ -18,18 +18,16 @@ export default function Lista() {
 
       <Text>Lista de Cursos</Text>
 
-      {/* Percorre os cursos do JSON */}
+      {/* Lista os cursos */}
       {dados.cursos.map((curso: Curso) => (
 
         <Button
           key={curso.id}
-
-          // Nome do curso
           title={curso.nome}
 
           onPress={() => {
 
-            // Navega para a tela de curso passando o ID
+            // Vai para tela do curso
             router.push(`/cursos/${curso.id}` as any);
 
           }}

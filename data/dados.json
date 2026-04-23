@@ -1,11 +1,29 @@
 {
   "cursos": [
-    { "id": "5d41402abc4b2a76b9719d911017c592", "nome": "React Native", "idInstrutor": "098f6bcd4621d373cade4e832627b4f6" },
-    { "id": "7d793037a0760186574b0282f2f435e7", "nome": "Node.js", "idInstrutor": "e4d909c290d0fb1ca068ffaddf22cbd0" },
-    { "id": "9e107d9d372bb6826bd81d3542a419d6", "nome": "Banco de Dados", "idInstrutor": "098f6bcd4621d373cade4e832627b4f6" }
+    {
+      "id": "5d41402abc4b2a76b9719d911017c592",
+      "nome": "React Native",
+      "idInstrutor": "098f6bcd4621d373cade4e832627b4f6"
+    },
+    {
+      "id": "7d793037a0760186574b0282f2f435e7",
+      "nome": "Node.js",
+      "idInstrutor": "e4d909c290d0fb1ca068ffaddf22cbd0"
+    },
+    {
+      "id": "9e107d9d372bb6826bd81d3542a419d6",
+      "nome": "Banco de Dados",
+      "idInstrutor": "098f6bcd4621d373cade4e832627b4f6"
+    }
   ],
   "instrutores": [
-    { "id": "e4d909c290d0fb1ca068ffaddf22cbd0", "nome": "Ana Silva" },
-    { "id": "098f6bcd4621d373cade4e832627b4f6", "nome": "Carlos Souza" }
+    {
+      "id": "e4d909c290d0fb1ca068ffaddf22cbd0",
+      "nome": "Ana Silva"
+    },
+    {
+      "id": "098f6bcd4621d373cade4e832627b4f6",
+      "nome": "Carlos Souza"
+    }
   ]
 }
